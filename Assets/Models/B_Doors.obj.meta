@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: e4c613c14c9831549a4f08528b0e509c
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Door_B01
+    100004: Door_B02
+    100006: Door_B03
+    100008: Door_B04
+    100010: Door_B05
+    100012: Door_B06
+    100014: Door_B07
+    100016: Door_B08
+    100018: Door_B09
+    100020: Door_B10
+    100022: Door_B11
+    100024: Door_B12
+    100026: Door_B13
+    100028: Door_B14
+    100030: Door_B15
+    100032: Door_B16
+    100034: Door_B17
+    100036: Door_B18
+    100038: Door_B19
+    100040: Door_B20
+    100042: Door_B21
+    100044: Door_B22
+    100046: MainDoorBasement
+    400000: //RootNode
+    400002: Door_B01
+    400004: Door_B02
+    400006: Door_B03
+    400008: Door_B04
+    400010: Door_B05
+    400012: Door_B06
+    400014: Door_B07
+    400016: Door_B08
+    400018: Door_B09
+    400020: Door_B10
+    400022: Door_B11
+    400024: Door_B12
+    400026: Door_B13
+    400028: Door_B14
+    400030: Door_B15
+    400032: Door_B16
+    400034: Door_B17
+    400036: Door_B18
+    400038: Door_B19
+    400040: Door_B20
+    400042: Door_B21
+    400044: Door_B22
+    400046: MainDoorBasement
+    2100000: Door_B01Mat
+    2100002: Door_B02Mat
+    2100004: Door_B03Mat
+    2100006: Door_B04Mat
+    2100008: Door_B05Mat
+    2100010: Door_B06Mat
+    2100012: Door_B07Mat
+    2100014: Door_B08Mat
+    2100016: Door_B09Mat
+    2100018: Door_B10Mat
+    2100020: Door_B11Mat
+    2100022: Door_B12Mat
+    2100024: Door_B13Mat
+    2100026: Door_B14Mat
+    2100028: Door_B15Mat
+    2100030: Door_B16Mat
+    2100032: Door_B17Mat
+    2100034: Door_B18Mat
+    2100036: Door_B19Mat
+    2100038: Door_B20Mat
+    2100040: Door_B21Mat
+    2100042: Door_B22Mat
+    2100044: MainDoorBasementMat
+    2300000: Door_B01
+    2300002: Door_B02
+    2300004: Door_B03
+    2300006: Door_B04
+    2300008: Door_B05
+    2300010: Door_B06
+    2300012: Door_B07
+    2300014: Door_B08
+    2300016: Door_B09
+    2300018: Door_B10
+    2300020: Door_B11
+    2300022: Door_B12
+    2300024: Door_B13
+    2300026: Door_B14
+    2300028: Door_B15
+    2300030: Door_B16
+    2300032: Door_B17
+    2300034: Door_B18
+    2300036: Door_B19
+    2300038: Door_B20
+    2300040: Door_B21
+    2300042: Door_B22
+    2300044: MainDoorBasement
+    3300000: Door_B01
+    3300002: Door_B02
+    3300004: Door_B03
+    3300006: Door_B04
+    3300008: Door_B05
+    3300010: Door_B06
+    3300012: Door_B07
+    3300014: Door_B08
+    3300016: Door_B09
+    3300018: Door_B10
+    3300020: Door_B11
+    3300022: Door_B12
+    3300024: Door_B13
+    3300026: Door_B14
+    3300028: Door_B15
+    3300030: Door_B16
+    3300032: Door_B17
+    3300034: Door_B18
+    3300036: Door_B19
+    3300038: Door_B20
+    3300040: Door_B21
+    3300042: Door_B22
+    3300044: MainDoorBasement
+    4300000: Door_B01
+    4300002: Door_B02
+    4300004: Door_B03
+    4300006: Door_B04
+    4300008: Door_B05
+    4300010: Door_B06
+    4300012: Door_B07
+    4300014: Door_B08
+    4300016: Door_B09
+    4300018: Door_B10
+    4300020: Door_B11
+    4300022: Door_B12
+    4300024: Door_B13
+    4300026: Door_B14
+    4300028: Door_B15
+    4300030: Door_B16
+    4300032: Door_B17
+    4300034: Door_B18
+    4300036: Door_B19
+    4300038: Door_B20
+    4300040: Door_B21
+    4300042: Door_B22
+    4300044: MainDoorBasement
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

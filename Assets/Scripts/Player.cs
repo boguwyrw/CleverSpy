@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
 
     private Rigidbody playerRigidbody;
-    private float playerSpeed = 5.0f;
+    private float playerSpeed = 7.0f;
 
     void Start()
     {

@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 38b0f3a77a5aeba4ea4ec0372170bcaf
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Door_GF01
+    100002: Door_GF02
+    100004: Door_GF03
+    100006: Door_GF04
+    100008: Door_GF05
+    100010: Door_GF06
+    100012: Door_GF07
+    100014: Door_GF08
+    100016: Door_GF09
+    100018: Door_GF10
+    100020: Door_GF11
+    100022: Door_GF12
+    100024: Door_GF13
+    100026: Door_GF14
+    100028: Door_GF15
+    100030: Door_GF16
+    100032: Door_GF17
+    100034: Door_GF18
+    100036: Door_GF19
+    100038: Door_GF20
+    100040: Door_GF21
+    100042: Door_GF22
+    100044: //RootNode
+    100046: MainDoorGroundFloor
+    400000: Door_GF01
+    400002: Door_GF02
+    400004: Door_GF03
+    400006: Door_GF04
+    400008: Door_GF05
+    400010: Door_GF06
+    400012: Door_GF07
+    400014: Door_GF08
+    400016: Door_GF09
+    400018: Door_GF10
+    400020: Door_GF11
+    400022: Door_GF12
+    400024: Door_GF13
+    400026: Door_GF14
+    400028: Door_GF15
+    400030: Door_GF16
+    400032: Door_GF17
+    400034: Door_GF18
+    400036: Door_GF19
+    400038: Door_GF20
+    400040: Door_GF21
+    400042: Door_GF22
+    400044: //RootNode
+    400046: MainDoorGroundFloor
+    2100000: Door_GF01Mat
+    2100002: Door_GF02Mat
+    2100004: Door_GF03Mat
+    2100006: Door_GF04Mat
+    2100008: Door_GF05Mat
+    2100010: Door_GF06Mat
+    2100012: Door_GF07Mat
+    2100014: Door_GF08Mat
+    2100016: Door_GF09Mat
+    2100018: Door_GF10Mat
+    2100020: Door_GF11Mat
+    2100022: Door_GF12Mat
+    2100024: Door_GF13Mat
+    2100026: Door_GF14Mat
+    2100028: Door_GF15Mat
+    2100030: Door_GF16Mat
+    2100032: Door_GF17Mat
+    2100034: Door_GF18Mat
+    2100036: Door_GF19Mat
+    2100038: Door_GF20Mat
+    2100040: Door_GF21Mat
+    2100042: Door_GF22Mat
+    2100044: MainDoorGroundFloorMat
+    2300000: Door_GF01
+    2300002: Door_GF02
+    2300004: Door_GF03
+    2300006: Door_GF04
+    2300008: Door_GF05
+    2300010: Door_GF06
+    2300012: Door_GF07
+    2300014: Door_GF08
+    2300016: Door_GF09
+    2300018: Door_GF10
+    2300020: Door_GF11
+    2300022: Door_GF12
+    2300024: Door_GF13
+    2300026: Door_GF14
+    2300028: Door_GF15
+    2300030: Door_GF16
+    2300032: Door_GF17
+    2300034: Door_GF18
+    2300036: Door_GF19
+    2300038: Door_GF20
+    2300040: Door_GF21
+    2300042: Door_GF22
+    2300044: MainDoorGroundFloor
+    3300000: Door_GF01
+    3300002: Door_GF02
+    3300004: Door_GF03
+    3300006: Door_GF04
+    3300008: Door_GF05
+    3300010: Door_GF06
+    3300012: Door_GF07
+    3300014: Door_GF08
+    3300016: Door_GF09
+    3300018: Door_GF10
+    3300020: Door_GF11
+    3300022: Door_GF12
+    3300024: Door_GF13
+    3300026: Door_GF14
+    3300028: Door_GF15
+    3300030: Door_GF16
+    3300032: Door_GF17
+    3300034: Door_GF18
+    3300036: Door_GF19
+    3300038: Door_GF20
+    3300040: Door_GF21
+    3300042: Door_GF22
+    3300044: MainDoorGroundFloor
+    4300000: Door_GF01
+    4300002: Door_GF02
+    4300004: Door_GF03
+    4300006: Door_GF04
+    4300008: Door_GF05
+    4300010: Door_GF06
+    4300012: Door_GF07
+    4300014: Door_GF08
+    4300016: Door_GF09
+    4300018: Door_GF10
+    4300020: Door_GF11
+    4300022: Door_GF12
+    4300024: Door_GF13
+    4300026: Door_GF14
+    4300028: Door_GF15
+    4300030: Door_GF16
+    4300032: Door_GF17
+    4300034: Door_GF18
+    4300036: Door_GF19
+    4300038: Door_GF20
+    4300040: Door_GF21
+    4300042: Door_GF22
+    4300044: MainDoorGroundFloor
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

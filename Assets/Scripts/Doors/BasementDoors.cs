@@ -8,14 +8,21 @@ public class BasementDoors : MonoBehaviour
 
     private MeshRenderer basementDoorMeshRenderer;
     private MeshCollider basementDoorMeshCollider;
+    private bool playerAnswer;
+    private BasementDoorsButtons basementDoors;
 
     public Text basementDoorsText;
     public GameObject basementDoorsButtons;
 
     private void Start ()
     {
+        //basementDoors = gameObject.AddComponent<BasementDoorsButtons>();
+        //basementDoors = gameObject.AddComponent(typeof(ScriptableObject)) as BasementDoorsButtons;
+        basementDoors = FindObjectOfType<BasementDoorsButtons>();
+
         basementDoorMeshRenderer = GetComponent<MeshRenderer>();
         basementDoorMeshCollider = GetComponent<MeshCollider>();
+        
         basementDoorsText.text = "";
         basementDoorsText.transform.position = new Vector3(0.5f * Screen.width, 0.8f * Screen.height, 0);
         basementDoorsButtons.transform.position = new Vector3(0.5f * Screen.width, 0.7f * Screen.height, 0);
@@ -24,7 +31,7 @@ public class BasementDoors : MonoBehaviour
 
 	private void Update ()
     {
-
+        playerAnswer = basementDoors.GetOpenDoors();
     }
 
     private void OnTriggerStay(Collider other)
@@ -37,11 +44,14 @@ public class BasementDoors : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
-            //basementDoorMeshRenderer.enabled = false;
-            //basementDoorMeshCollider.enabled = false;
+            if (playerAnswer)
+            {
+                basementDoorMeshRenderer.enabled = false;
+                basementDoorMeshCollider.enabled = false;
+            }
+
             basementDoorsText.text = gameObject.name.ToString();
             basementDoorsButtons.SetActive(true);
-            Time.timeScale = 0.0f;
         }
     }
 

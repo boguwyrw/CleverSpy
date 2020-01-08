@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasementDoorsButtons : MonoBehaviour
+public class GroundFloorDoorsButtons : MonoBehaviour
 {
 
     private bool openDoors;
@@ -10,7 +10,6 @@ public class BasementDoorsButtons : MonoBehaviour
     private void Start ()
     {
         openDoors = false;
-
     }
 
     private void Update ()

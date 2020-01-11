@@ -16,7 +16,7 @@ public class BasementDoors : MonoBehaviour
         basementDoorMeshRenderer = GetComponent<MeshRenderer>();
         basementDoorMeshCollider = GetComponent<MeshCollider>();
         basementDoorsText.text = "";
-        basementDoorsText.transform.position = new Vector3(0.5f * Screen.width, 0.8f * Screen.height, 0);;
+        basementDoorsText.transform.position = new Vector3(0.5f * Screen.width, 0.8f * Screen.height, 0);
     }
 
 	private void Update ()
@@ -28,14 +28,12 @@ public class BasementDoors : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            basementDoorMeshRenderer.enabled = false;
-            basementDoorMeshCollider.enabled = false;
+            OpenBasementDoor();
         }
 
         if (other.gameObject.CompareTag("Player"))
         {
-            basementDoorMeshRenderer.enabled = false;
-            basementDoorMeshCollider.enabled = false;
+            OpenBasementDoor();
             basementDoorsText.text = gameObject.name.ToString();
         }
     }
@@ -44,16 +42,26 @@ public class BasementDoors : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            basementDoorMeshRenderer.enabled = true;
-            basementDoorMeshCollider.enabled = true;
+            CloseBasementDoor();
         }
 
         if (other.gameObject.CompareTag("Player"))
         {
-            basementDoorMeshRenderer.enabled = true;
-            basementDoorMeshCollider.enabled = true;
+            CloseBasementDoor();
             basementDoorsText.text = "";
         }
+    }
+
+    private void OpenBasementDoor()
+    {
+        basementDoorMeshRenderer.enabled = false;
+        basementDoorMeshCollider.enabled = false;
+    }
+
+    private void CloseBasementDoor()
+    {
+        basementDoorMeshRenderer.enabled = true;
+        basementDoorMeshCollider.enabled = true;
     }
 
 }

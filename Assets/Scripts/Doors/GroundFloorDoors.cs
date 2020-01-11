@@ -8,7 +8,6 @@ public class GroundFloorDoors : MonoBehaviour
 
     private MeshRenderer groundFloorDoorMeshRenderer;
     private MeshCollider groundFloorDoorMeshCollider;
-    private bool playerAnswer;
 
     public Text groundFloorDoorsText;
 
@@ -16,7 +15,6 @@ public class GroundFloorDoors : MonoBehaviour
     {
         groundFloorDoorMeshRenderer = GetComponent<MeshRenderer>();
         groundFloorDoorMeshCollider = GetComponent<MeshCollider>();
-
         groundFloorDoorsText.text = "";
         groundFloorDoorsText.transform.position = new Vector3(0.5f * Screen.width, 0.8f * Screen.height, 0);
     }
@@ -30,14 +28,12 @@ public class GroundFloorDoors : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            groundFloorDoorMeshRenderer.enabled = false;
-            groundFloorDoorMeshCollider.enabled = false;
+            OpenGroundFloorDoor();
         }
 
         if (other.gameObject.CompareTag("Player"))
         {
-            groundFloorDoorMeshRenderer.enabled = false;
-            groundFloorDoorMeshCollider.enabled = false;
+            OpenGroundFloorDoor();
             groundFloorDoorsText.text = gameObject.name.ToString();
         }
     }
@@ -46,16 +42,26 @@ public class GroundFloorDoors : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            groundFloorDoorMeshRenderer.enabled = true;
-            groundFloorDoorMeshCollider.enabled = true;
+            CloseGroundFloorDoor();
         }
 
         if (other.gameObject.CompareTag("Player"))
         {
-            groundFloorDoorMeshRenderer.enabled = true;
-            groundFloorDoorMeshCollider.enabled = true;
+            CloseGroundFloorDoor();
             groundFloorDoorsText.text = "";
         }
+    }
+
+    private void OpenGroundFloorDoor()
+    {
+        groundFloorDoorMeshRenderer.enabled = false;
+        groundFloorDoorMeshCollider.enabled = false;
+    }
+
+    private void CloseGroundFloorDoor()
+    {
+        groundFloorDoorMeshRenderer.enabled = true;
+        groundFloorDoorMeshCollider.enabled = true;
     }
 
 }

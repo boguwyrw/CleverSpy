@@ -9,26 +9,21 @@ public class GroundFloorDoors : MonoBehaviour
     private MeshRenderer groundFloorDoorMeshRenderer;
     private MeshCollider groundFloorDoorMeshCollider;
     private bool playerAnswer;
-    private GroundFloorDoorsButtons groundFloorDoors;
 
     public Text groundFloorDoorsText;
-    public GameObject groundFloorDoorsButtons;
 
     private void Start ()
     {
         groundFloorDoorMeshRenderer = GetComponent<MeshRenderer>();
         groundFloorDoorMeshCollider = GetComponent<MeshCollider>();
-        groundFloorDoors = gameObject.AddComponent<GroundFloorDoorsButtons>();
-        groundFloorDoors = FindObjectOfType<GroundFloorDoorsButtons>();
+
         groundFloorDoorsText.text = "";
         groundFloorDoorsText.transform.position = new Vector3(0.5f * Screen.width, 0.8f * Screen.height, 0);
-        groundFloorDoorsButtons.transform.position = new Vector3(0.5f * Screen.width, 0.7f * Screen.height, 0);
-        groundFloorDoorsButtons.SetActive(false);
     }
 
 	private void Update ()
     {
-        playerAnswer = groundFloorDoors.GetOpenDoors();
+
     }
 
     private void OnTriggerStay(Collider other)
@@ -41,13 +36,9 @@ public class GroundFloorDoors : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
-            if (playerAnswer)
-            { 
-                groundFloorDoorMeshRenderer.enabled = false;
-                groundFloorDoorMeshCollider.enabled = false;
-            }
+            groundFloorDoorMeshRenderer.enabled = false;
+            groundFloorDoorMeshCollider.enabled = false;
             groundFloorDoorsText.text = gameObject.name.ToString();
-            groundFloorDoorsButtons.SetActive(true);
         }
     }
 
@@ -61,10 +52,9 @@ public class GroundFloorDoors : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
-            //groundFloorDoorMeshRenderer.enabled = true;
-            //groundFloorDoorMeshCollider.enabled = true;
+            groundFloorDoorMeshRenderer.enabled = true;
+            groundFloorDoorMeshCollider.enabled = true;
             groundFloorDoorsText.text = "";
-            groundFloorDoorsButtons.SetActive(false);
         }
     }
 

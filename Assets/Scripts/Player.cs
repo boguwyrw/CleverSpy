@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     {
         playerRigidbody = GetComponent<Rigidbody>();
         playerRigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        Cursor.visible = false;
     }
 
     void FixedUpdate()

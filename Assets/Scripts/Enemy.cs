@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -16,6 +17,14 @@ public class Enemy : MonoBehaviour
     private float enemyRange;
 
     public List<Transform> waypointPath = new List<Transform>();
+
+    // enemy health
+    private int enemyHealth;
+    private int enemyMaxHealth;
+    private bool enemyIsAlive;
+    public Slider enemyHealthSlider;
+    public Image enemyHealthBackground;
+    public Image enemyHealthFill;
 
     // enemy shooting
     private float fireRate;
@@ -40,6 +49,14 @@ public class Enemy : MonoBehaviour
         enemyRange = 15.0f;
         navMeshAgent.speed = 6.0f;
 
+        // enemy health
+        enemyMaxHealth = 100;
+        enemyHealth = enemyMaxHealth;
+        enemyIsAlive = true;
+        enemyHealthSlider.maxValue = enemyHealth;
+        enemyHealthBackground.color = new Color(0, 0, 0);
+        enemyHealthFill.color = new Color(255, 0, 0);
+
         // enemy shooting
         fireRate = 1.0f;
         nextFire = Time.time;
@@ -49,15 +66,29 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        EnemyAngleOfView();
-        if (!enemySeePlayer)
+        enemyHealthSlider.transform.LookAt(player.transform);
+
+        enemyHealthSlider.value = enemyHealth;
+
+        if (enemyHealth <= 0)
         {
-            EnemyPatrolling();
+            enemyHealthFill.color = new Color(0, 0, 0);
+            enemyIsAlive = false;
         }
-        else
+
+        if (enemyIsAlive)
         {
-            EnemyChasingPlayer();
+            EnemyAngleOfView();
+            if (!enemySeePlayer)
+            {
+                EnemyPatrolling();
+            }
+            else
+            {
+                EnemyChasingPlayer();
+            }
         }
+        
     }
 
     private void EnemyPatrolling() // dziala :-)
@@ -115,6 +146,14 @@ public class Enemy : MonoBehaviour
                 enemyBulletClone.velocity = transform.TransformDirection(Vector3.forward * enemyBulletSpeed * Time.deltaTime);
                 nextFire = Time.time + fireRate;
             }
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("PlayerBullet"))
+        {
+            enemyHealth -= 25;
         }
     }
 

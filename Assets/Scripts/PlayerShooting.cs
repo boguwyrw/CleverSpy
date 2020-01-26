@@ -12,12 +12,14 @@ public class PlayerShooting : MonoBehaviour
 
     public GameObject playerGun;
     public Rigidbody playerBullet;
+    public AudioSource audioSource;
 
     private void Start()
     {
         playerBulletSpeed = 1200.0f;
         fireRate = 1.0f;
         nextFire = Time.time;
+        audioSource = FindObjectOfType<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -26,6 +28,7 @@ public class PlayerShooting : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1") && (Time.time > nextFire))
         {
+            audioSource.Play();
             Rigidbody bulletClone;
             bulletClone = Instantiate(playerBullet, playerBulletStartPosition, transform.rotation);
             bulletClone.velocity = transform.TransformDirection(Vector3.forward * playerBulletSpeed * Time.deltaTime);
